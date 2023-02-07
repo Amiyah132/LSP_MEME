@@ -6,10 +6,10 @@ import java.util.*; //allows use of HashMap
 public class Driver {
 
 	public static void main(String[] args) {
-		FileReader filename = new FileReader(); //FileReader to read file
+		FileReader fr = new FileReader(); //FileReader to read file
 		HashMap<String, Integer> hashmap = new HashMap<String, Integer>(); //creating a HashMap containing string
 		try {
-			String filepath = filename.readToString("words.txt"); //accessing text file
+			String filepath = fr.readToString("words.txt"); //accessing text file
 			System.out.println(filepath);
 			String[] str_split = filepath.replaceAll("[^a-zA-z ]",  "").toLowerCase().split(" ");// reads lowercase and uppercase as the same
 			for (int i = 0; i < str_split.length; i++) { 
@@ -27,7 +27,7 @@ public class Driver {
 			}
 		}
 		catch (FileNotFoundException e) { 
-			System.out.println("File not found in directory");
+			System.out.println("Unable to open resource");
 		}
 		}
 }
