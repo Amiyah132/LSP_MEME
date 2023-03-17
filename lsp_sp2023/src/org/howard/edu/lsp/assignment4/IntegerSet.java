@@ -9,6 +9,7 @@ public class IntegerSet {
 		num_set = new ArrayList<Integer>();
 	}
 	
+	@SuppressWarnings("serial")
 	public class IntegerSetException extends Exception {
 		public IntegerSetException(String error) {
 			super(error);
@@ -117,7 +118,8 @@ public class IntegerSet {
 		}
 		return setString;
 	}
-
+	
+	
 
 
 }
