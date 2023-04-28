@@ -51,20 +51,10 @@ public class SongsDatabase {
 		Set<String> songs = db.getSongs("Rap"); 
 
 		System.out.println( db.getGenreOfSong("Yacht Club") );// prints “Rap” 
-		Set<String> songs1 = db.getSongs("RnB"); 
-		
-		System.out.println( db.getGenreOfSong("Obsessed") );// prints  
+		System.out.println( db.getGenreOfSong("Diamonds") );
 
 		}
-
-	private Set<String> getSongs() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	private void addSong() {
-		// TODO Auto-generated method stub
 		
-	}
+
 }
 
